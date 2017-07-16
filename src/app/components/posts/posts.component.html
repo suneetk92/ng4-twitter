@@ -1,0 +1,17 @@
+<div>
+  <button (click)="fetchPosts()">
+    Click here to fetch posts
+  </button>
+</div>
+
+<div *ngFor="let post of posts; let i = index">
+  <h4>
+    {{i+1}}. {{post.title}}
+  </h4>
+  <p>
+    {{post.body}}
+  </p>
+</div>
+
+
+
