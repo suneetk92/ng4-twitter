@@ -9,17 +9,20 @@ import {TwitterComponent} from './components/twitter/twitter.component';
 
 import {PostsService} from './services/posts.service';
 import {PostsComponent} from './components/posts/posts.component';
+import { Twitter2Component } from './components/twitter2/twitter2.component';
 
 const appRoutes: Routes = [
   {path: 'posts', component: PostsComponent},
-  {path: 'twitter', component: TwitterComponent}
+  {path: 'twitter', component: TwitterComponent},
+  {path: 'twitter2', component: Twitter2Component}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     TwitterComponent,
-    PostsComponent
+    PostsComponent,
+    Twitter2Component
   ],
   imports: [
     BrowserModule,
